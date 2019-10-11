@@ -14,7 +14,10 @@ public class Bisiesto {
         if (ano%4==0){
             System.out.printf("El año %d es bisiesto %n",ano);
         }
-        else{
+        else if(ano % 100 == 0){
+            System.out.printf("El año %d  es bisiesto %n",ano);
+        }
+        else if (ano % 400 == 0){
             System.out.printf("El año %d no es bisiesto %n",ano);
         }
     }

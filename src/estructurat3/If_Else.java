@@ -4,7 +4,7 @@ import java.util.Scanner;
  *
  * @author Diego_eloy DAM 1
  */
-public class EstructuraT3 {
+public class If_Else {
     
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
