@@ -42,16 +42,5 @@ public class BinarioOctalHexadecimal {
 
         System.out.println(numero + conversion);
 
-        //HEXADECIMAL
-        do {
-            if(numero>9){
-                
-            resto = numero % 16;
-            numero = numero / 16;
-            conversion = resto + conversion;
-            }
-        } while (numero > 15);
-        
-        System.out.println(numero + conversion);
     }
 }
