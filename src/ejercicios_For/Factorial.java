@@ -1,28 +1,23 @@
 package ejercicios_For;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Diego_Eloy DAM 1
  */
 public class Factorial {
-    /**
-     * 
-     * 6! = 1x2x3x4x5x6 
-     * 
-     * @param args 
-     */
+
+    static Scanner teclado = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        int numero = teclado.nextInt();
-        
-        if(numero <= -1){
-            System.out.println("Numero no valido");
+        int factorial;
+        System.out.println("Introduce el numero a Calcular: ");
+        factorial = teclado.nextInt();
+
+        for (int i = factorial - 1; i >= 1; i--) {
+            factorial = factorial * i;
         }
-        if(numero >=21 ){
-            System.out.println("Numero no valido");
-        }
-        
-        int factorial = numero!;
-        
+        System.out.printf("El factorial es %d %n", factorial);
     }
 }
